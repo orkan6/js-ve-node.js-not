@@ -25,4 +25,30 @@ if(yas > 20){
 
 //mantıksal operatörler
 
+AND &&
+OR ||
+NOT !
+
+// eşitlikler
+==
+=== (hem eşit hem veri tipi aynı)
+!= eşit değil
+!==
+
+//DÖNGÜLER
+
+// While
+while(isim == "Test"){
+  yazacağın şey
+}
+
+
+for da aynı
+
+// Fonksiyonlar
+
+function fonskiyonAdi(){
+  
+}
+
 
