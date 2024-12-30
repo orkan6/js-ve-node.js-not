@@ -1,0 +1,43 @@
+Callback Fonksiyonu: Başka bir fonksiyona parametre olarak gönderilen ve işlem tamamlandığında çağrılan fonksiyonlardır.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+server.listen: Sunucunun belirtilen portu dinlemeye başlamasını sağlar. Yani sunucuyu başlatır. Örneğimizdeki 3000 portunda sunucu çalışmaya başlar.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+req, res:
+req (request): Kullanıcıdan gelen isteği içerir (URL, HTTP metodu, başlıklar vs.)
+res (response): Sunucudan kullanıcıya gönderilecek cevabı içerir
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+ res.end: Sunucudan gönderilecek cevabı tamamlar ve gönderir. Bu metod çağrılmadan cevap kullanıcıya iletilmez.
+   ---------------------------------------------------------------------------------------------------------------------------------------------------------
+res.writeHead(200: HTTP durum kodunu ve başlıklarını ayarlar:
+200: İşlemin başarılı olduğunu belirtir
+Diğer yaygın kodlar:
+404: Sayfa bulunamadı
+500: Sunucu hatası
+403: Erişim yasak
+301: Sayfa taşındı
+   ---------------------------------------------------------------------------------------------------------------------------------------------------------
+fs modülü              
+ Temel Dosya İşlemleri:
+writeFile: Dosya oluşturma ve yazma
+readFile: Dosya okuma
+appendFile: Var olan dosyaya ekleme yapma
+exists: Dosya kontrolü
+mkdir: Klasör oluşturma             
+   ---------------------------------------------------------------------------------------------------------------------------------------------------------
+ HTTP Metodları:
+GET: Veri okuma
+POST: Yeni veri oluşturma
+PUT: Mevcut veriyi güncelleme
+DELETE: Veri silme
+Endpoint'ler (URL'ler):
+/: Ana sayfa
+/kullanicilar: Tüm kullanıcılar
+/kullanicilar/:id: Belirli bir kullanıcı
+Status Kodları:
+200: OK (Başarılı)
+201: Created (Oluşturuldu)
+204: No Content (İçerik Yok)
+400: Bad Request (Hatalı İstek)
+404: Not Found (Bulunamadı)
+Middleware:
+express.json(): JSON verilerini işlemek için             
